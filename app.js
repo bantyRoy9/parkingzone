@@ -11,7 +11,7 @@ require('./db/db');
 
 app.use(require('./routing/route'));
 
-if(process.env.NODE.ENV == "production");
+if(process.env.NODE.ENV == "production")
 {
     app.use(express.static("client/build"));
 }
