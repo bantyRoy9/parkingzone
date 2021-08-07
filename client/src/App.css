@@ -1,0 +1,419 @@
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    /* font-style: italic; */
+}
+
+.container::before{
+    content: " ";
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(23, 30, 56, 0.7),rgba(30, 33, 44, 0.5)), url(./john-matychuk-yvfp5YHWGsc-unsplash.jpg);
+    background-size: cover;
+    z-index: -1;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: rgba(0,0,0,0.9);
+}
+body{
+
+    font-family: 'Poppins', sans-serif;
+}
+.header__nav {
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 2fr;  
+    /* height: 5vh; */
+    position: sticky;
+    cursor: pointer;
+    color:black;
+    top: 0;
+    height: 9vh;
+     background:white;
+     /* box-shadow: 10px 12px 10px 12px black; */
+     
+    }
+    
+    .navbar {
+        display: inline-flex;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    .navbar  a,.logo1 a{
+       text-decoration: none;
+       font-size: 20px;
+       align-items: center;
+       text-align: center;
+       padding-left: 10px;
+       margin-left: 50px;
+       color: rgb(156, 153, 146);
+}
+.navbar a:hover{
+    color: rgb(235, 84, 46);
+    transition: 0.2s;
+    text-decoration: underline;
+}
+
+.logo {
+   display: flex;
+   align-items: center;
+   font-size: 28px;
+   justify-content: center;
+   font-weight: 900;
+}
+.logo:hover {
+    color: green;
+}
+.uil-map-marker{
+    color: green;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+
+.sign {
+    display: flex;
+    height: 10vh;
+    border-left: 2px solid white;
+    /* border: 1px solid gray; */
+}
+.sign p{
+   display: flex;
+   width: 20%;
+   font-size: 15px;
+   margin-left: 240px;
+   align-items: center;
+}
+
+
+.logo1{
+   display: flex;
+   width: 100%;
+   align-items: center;    
+   
+}
+
+.headline{
+   width: 70%;
+   margin:  auto;
+   margin-top: 100px;
+   color:white;
+   text-align: center;
+}
+.headline h1{
+   font-size: 55px;
+   /* text-shadow: 2px 2px 2px rgb(175, 81, 81);; */
+   text-shadow: 3px -4px 4px 10px rgb(20, 18, 19);
+   font-weight:bolder;
+
+}
+
+.headline h2
+{
+   font-size: 30px;
+   margin: 20px;
+   text-shadow: 3px -4px 4px rgb(31, 28, 29);
+}
+.btn { 
+    align-items: center;
+   cursor: pointer;
+}
+.btn input{
+    border: none;
+    padding: 15px 50px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    background-color: green;
+    color: white;
+}
+.btn :hover{
+   background-color:rgb(91, 130, 236);
+   color: black;
+   transition: 0.2s;
+   cursor: pointer;
+   
+}
+.searchbar input {
+    border: none;
+    font-size: 1.3rem; 
+}
+.searchbar a{
+    text-decoration: none;
+
+}
+
+.searchbar {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1.5fr 2fr ;
+    margin-top: 80px;
+    border-radius: 5px;
+    color:black;
+    height: 10vh;
+     background:white;
+     align-items: center;
+     /* box-shadow: 10px 12px 10px 12px black; */
+     
+    }
+
+    .main{
+      margin-top: 190px;
+      background: whitesmoke;
+      
+  }
+  .main-content{
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 120px;
+  }
+  .main-img {
+      height: 60%;
+      margin:auto;
+      width: 50%;
+  }
+  .main-about{
+      padding: 50px 100px;
+  }
+  .main-about h1{
+      font-size: 3rem;
+      font-weight: bolder;
+      color: rgb(53, 51, 52);
+  }
+  .main-about hr{
+      width: 30%;
+      margin-top: -10px;
+      background-color: green;
+      height: .25vh;
+      margin-bottom: 60px;
+  }
+  .main-about small{
+      font-size: 1rem;
+      
+      color: rgb(128, 126, 122);
+  }
+  .main-content-map{
+      margin-top: -420px;
+      margin-left: 300px;
+      
+  }
+  .main-content-map iframe{
+      border-radius: 10px;
+      border: none;
+  }
+  .main-blocks{
+      display: flex;
+      margin: auto;
+      /* padding: 80px; */
+      width: 90%;
+  }
+  .main-block-content{
+      display: flex;
+      border: 1px dotted rgb(190, 185, 185);
+      margin: 50px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+  }
+  .main-block-content .uil{
+     font-size: 50px;
+     color: green;
+     margin: 15px;
+  
+  }
+  .main-block-content:hover{
+     background: green;
+     color: white;
+     cursor: pointer;
+     transition: 0.2s;
+     border: none;
+  }
+  .uil:hover{
+      color: white;
+  }
+  .main-block-content h1{
+      font-size: 1.5rem;
+  }
+  .parking-container::before{
+      content: " ";
+      position: absolute;
+      height: 110vh;
+      width: 100%;
+      background: linear-gradient(rgba(23, 30, 56, 0.7),rgba(30, 33, 44, 0.5)), url(./john-matychuk-yvfp5YHWGsc-unsplash.jpg);
+      background-size: cover;
+      z-index: -1;
+      background-position: center;
+      opacity: rgba(0,0,0,0.9);
+  
+  }
+  .parking-title{
+      color: white;
+      text-align: center;
+      font-size: 3rem;
+      padding:  100px;
+  }
+  .parking-rate{
+      display: flex;
+      width: 85%;
+      margin: auto;
+      margin-top: -80px;
+      
+  }
+  .parking-rate-manu{
+      text-align: center;
+      border: 3px dotted rgb(190, 185, 185);
+      background: white;
+      border-radius: 10px;
+      margin: 20px;
+      padding: 30px;
+  
+  }
+  .parking-manu{
+      display: flex;
+      justify-content: center;
+  }
+  .parking-manu{
+      color: green;
+      margin-top: 40px;
+      font-size: 2.5rem;
+  }
+  .parking-manu small{
+      margin-top: 40px;
+      font-size: 1.5rem;
+      color: green;
+  }
+  .parking-rate-manu h2{
+      font-size: 2rem;
+      margin: 20px;
+      color: rgba(0,0,0,0.8);
+  
+  }
+  .parking-rate-manu small{
+      font-size: .9rem;
+      color: rgba(0,0,0,0.5);
+      font-weight: 500;
+      margin-bottom: 50px;
+  }
+  .parking-btn{
+      margin-top: 30px;
+  
+  }
+  .parking-pre{
+      display: flex;
+      width: 100%;
+      height: 25vh;
+      background-color: rgb(47, 74, 192);
+      color: white;
+      justify-content: space-around;
+      margin-top: 80px;
+      align-items: center;
+  }
+  .pre-title{
+      font-size: 2rem;
+  
+  }
+  .pre-btn{
+      border-radius: 10px;
+  }
+  
+  
+  
+  .footer{
+      width: 100%;
+      height: 70vh;
+      background-color: rgba(8, 8, 8, 0.8);
+      color: white;
+  }
+  .footer-container{
+      padding: 100px 100px;
+  }
+  .footer-container-item{
+      display: grid;
+      grid-template-columns: 3fr 2fr 2fr;
+      /* justify-content: space-around; */
+      margin: 20px;
+  
+  }
+  .footer-list{
+      padding: 40px;
+  }
+  .footer-logo{
+      margin-bottom: 40px;
+  }
+  .footer-logo p{
+      font-size: 1.8rem;
+  }
+  .footer-list small{
+      /* border: 1px solid red; */
+      font-size: 1rem;
+      width: 20px;
+  }
+  .footer-logo-btn{
+      display: flex;
+      margin-top:  30px;
+  }
+  .footer-store{
+      display: flex;
+     border-radius: 12px;
+  }
+  .footer-logo-btn a:hover{
+      background-color: green;
+      border: 2px dotted white;
+  }
+  .footer-logo-btn a{
+      text-decoration: none;
+      color: white;
+      border: 2px solid rgb(20, 18, 19);
+      padding: 5px;
+      margin: 10px;
+      font-size: .81rem;
+  }
+  .footer-store-logo{
+      font-size: 1.8rem ;
+      margin-right: 5px;
+  }
+
+
+    /* sign */
+
+    .Sign-container{
+      width: 70%;
+      height: 70vh;
+      margin: auto;
+      margin-top: 70px;
+      background: whitesmoke;
+      border: 2px solid rgba(0,0, 0,.1);
+      border-radius: 15px;
+      box-shadow: 1px 1px 10px 1px rgba(0,0, 0,.1);
+      text-align: center;
+    }
+    .sign-content{
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .slc-headline{
+          font-size: 2rem;
+          color: green;
+      }
+      .form-group {
+        margin: 10px 200px;
+        background-color: white;
+
+      }
+      .sign-form input{
+          border: none;
+          font-size: 1rem;
+          padding: 20px;
+          width: 60%;
+        }
+        .form-icon {
+          font-size: 2rem;
+            color :green;
+            margin-left: -20px;
+            margin-top: 50px;
+      }
