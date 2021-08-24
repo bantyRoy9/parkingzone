@@ -53,6 +53,6 @@ userDetail.pre('save',async function(next){
 
 // }
 
-const User = mongoose.model('USER',userDetail);
+const User = mongoose.model('User',userDetail);
 
 module.exports = User;
